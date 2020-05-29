@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Práctica con JS</title>
+  </head>
+  <body>
+    <h1>Vamos a practicar con métodos de Arrays</h1>
+    <script type="application/javascript">
+      var dias = 'Lunes,Martes,Miércoles,Jueves,Viernes,Sábado,Domingo';
+      var ciudades = 'Madrid.Sevilla.Barcelona.Valencia.Zaragoza.Bilbao.Donosti';
+      var arrDias = dias.split(',');
+      var arrCiudades = ciudades.split('.');
+      var conciertos = [];
+      for(var i = 0; i < arrDias.length; i++){
+        var aux = [arrDias[i], arrCiudades[i]];
+        conciertos.push(aux);
+      }
+      console.log(arrDias);
+      console.log(arrCiudades);
+      console.log(conciertos);
+    </script>
+  </body>
+</html>
